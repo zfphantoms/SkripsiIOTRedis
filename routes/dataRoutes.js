@@ -4,6 +4,7 @@ const router = express.Router();
 
 let mysqlPool;
 let redisClient;
+
 // let verifyTokenMiddleware; // Hapus ini, karena akan digunakan langsung dari parameter initDataRoutes
 let useRedisSession = false;
 
