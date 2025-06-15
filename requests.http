@@ -1,0 +1,15 @@
+### Request Login
+POST http://localhost:3000/auth/login  <-- URL diubah
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "password123"
+}
+
+### Request Protected Data (Tanpa Token - Akan Gagal)
+GET http://localhost:3000/api/protected-data  <-- URL diubah
+
+### Request Protected Data (Dengan Token - Ganti TOKEN_DARI_LOGIN)
+GET http://localhost:3000/api/protected-data  <-- URL diubah
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
